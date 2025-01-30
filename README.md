@@ -1,3 +1,35 @@
+```
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 512 -s 0 -S -b 67
+```
+```
+[+] Version 0.2.230430 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 512
+[+] Turn off stats output
+[+] Mode BSGS secuential
+[+] Opening file tests/63.pub
+[+] Added 1 points from file
+[+] Bit Range 63
+[+] -- from : 0x4000000000000000
+[+] -- to   : 0x8000000000000000
+[+] N = 0x100000000000
+[+] Bloom filter for 2147483648 elements : 7361.33 MB
+[+] Bloom filter for 67108864 elements : 230.04 MB
+[+] Bloom filter for 2097152 elements : 7.19 MB
+[+] Allocating 32.00 MB for 2097152 bP Points
+[+] Reading bloom filter from file keyhunt_bsgs_4_2147483648.blm .... Done!
+[+] Reading bloom filter from file keyhunt_bsgs_6_67108864.blm .... Done!
+[+] Reading bP Table from file keyhunt_bsgs_2_2097152.tbl .... Done!
+[+] Reading bloom filter from file keyhunt_bsgs_7_2097152.blm .... Done!
+[+] Thread Key found privkey 7cce5efdaccf6808
+[+] Publickey 0365ec2994b8cc0a20d40dd69edfe55ca32a54bcbbaa6b0ddcff36049301a54579
+All points were found00000000
+[+] Thread 0x7cf4d00000000000
+real    4m11.358s
+user    26m23.474s
+sys     0m20.061s
+```
+
 # keyhunt customizations tool's logs
 
 Thus 30 Jan 2025 8:03:45 PM 
