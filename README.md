@@ -2,6 +2,32 @@
 ```
 time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 48015000000000000:50000000000000000
 ```
+output:
+```
+[+] Version 0.2.230519 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 16
+[+] Mode BSGS sequential
+[+] Opening file tests/67.pub
+[+] Added 1 points from file
+[+] Range 
+[+] -- from : 0x40000000000000000
+[+] -- to   : 0x50000000000000000
+[+] N = 0x100000000000
+[+] Bloom filter for 67108864 elements : 230.04 MB
+[+] Bloom filter for 2097152 elements : 7.19 MB
+[+] Bloom filter for 65536 elements : 0.88 MB
+[+] Allocating 1.00 MB for 65536 bP Points
+[+] processing 67108864/67108864 bP points : 100%     
+[+] Making checkums .. ... done
+[+] Sorting 65536 elements... Done!
+[+] Thread 0x43decc00000000000   s in 10380 seconds: ~428 Tkeys/s (4286527643886[+] Total 4462398727654473728 keys in 10410 seconds: ~428 Tkeys/s (4286646232136[+] Thread 0x43df0200000000000   
+
+
+[+] Thread 0x4826e600000000000   s in 21810 seconds: ~430 Tkeys/s (430677040964658 keys/s)
+
+
+```
 ```
 time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 47006400000000000:50000000000000000
 ```
