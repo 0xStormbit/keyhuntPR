@@ -1,5 +1,5 @@
 ```
-time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 46f22400000000000:50000000000000000
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 47006400000000000:50000000000000000
 ```
 
 ```
