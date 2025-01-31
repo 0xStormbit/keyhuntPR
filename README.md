@@ -1,10 +1,10 @@
 
+```
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 43cc1e00000000000:50000000000000000
+```
 
 ![Snap 2025-01-31 at 1 19 12 PM](https://github.com/user-attachments/assets/3deb7568-6b86-41e2-9476-419809cbae0d)
 
-```
-time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 43b8ba00000000000:50000000000000000
-```
 Fri 31 Jan 2025, 1:18 PM 
 
 ```
