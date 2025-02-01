@@ -28,9 +28,7 @@ End
 real    117m22.457s
 user    211m4.590s
 sys     2m44.191s
-tvbox2025z@cloudshell:~/keyhunt$ cat runpubv6
-#!/bin/sh
-time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 384  -r 6ffffbf2000000000:7ffffffffffffffff
+
 ```
 
 command
