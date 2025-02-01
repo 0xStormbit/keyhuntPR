@@ -1,0 +1,2 @@
+#!/bin/sh
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 384  -r 6ffffbf2000000000:7ffffffffffffffff
