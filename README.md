@@ -1,3 +1,106 @@
+```sh
+#!/bin/sh
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 384  -r 527cf200000000000:5ffffffffffffffff
+```
+output
+```
+:~/keyhunt$ ./runpub67v0.2
+[+] Version 0.2.230519 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 384
+[+] Mode BSGS sequential
+[+] Opening file tests/67.pub
+[+] Added 1 points from file
+[+] Range 
+[+] -- from : 0x527cf200000000000
+[+] -- to   : 0x5ffffffffffffffff
+[+] N = 0xfffc0000000
+[+] Bloom filter for 1610612736 elements : 5520.99 MB
+[+] Bloom filter for 50331648 elements : 172.53 MB
+[+] Bloom filter for 1572864 elements : 5.39 MB
+[+] Allocating 24.00 MB for 1572864 bP Points
+[+] processing 1610612736/1610612736 bP points : 100%     
+[+] Making checkums .. ... done
+[+] Sorting 1572864 elements... Done!
+[+] Thread 0x5406e7d8100000000   s in 270 seconds: ~6 Pkeys/s (6433525834932406 keys/s)
+
+```
+
+
+
+
+
+```
+#!/bin/sh
+time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 64  -r 50000000000000000:5ffffffffffffffff
+
+```
+output
+```
+[+] Version 0.2.230519 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 64
+[+] Mode BSGS sequential
+[+] Opening file tests/67.pub
+[+] Added 1 points from file
+[+] Range 
+[+] -- from : 0x50000000000000000
+[+] -- to   : 0x5ffffffffffffffff
+[+] N = 0x100000000000
+[+] Bloom filter for 268435456 elements : 920.17 MB
+[+] Bloom filter for 8388608 elements : 28.76 MB
+[+] Bloom filter for 262144 elements : 0.90 MB
+[+] Allocating 4.00 MB for 262144 bP Points
+[+] processing 268435456/268435456 bP points : 100%     
+[+] Making checkums .. ... done
+[+] Sorting 262144 elements... Done!
+[+] Thread 0x51a19e00000000000   s in 1410 seconds: ~1 Pkeys/s (1318191234017474 keys/s)
+
+
+
+
+```
+
+
+
+test commmand 63.pub
+```
+#!/bin/sh
+time ./keyhunt -m bsgs -t 8 -f tests/63.pub -k 16 -r 7cce4e0daccf6808:7ccf5ffdaccf6808
+
+```
+output
+```
+:~/keyhunt$ ./testpub63
+[+] Version 0.2.230519 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 16
+[+] Mode BSGS sequential
+[+] Opening file tests/63.pub
+[+] Added 1 points from file
+[+] Range 
+[+] -- from : 0x7cce4e0daccf6808
+[+] -- to   : 0x7ccf5ffdaccf6808
+[+] N = 0x100000000000
+[+] Bloom filter for 67108864 elements : 230.04 MB
+[+] Bloom filter for 2097152 elements : 7.19 MB
+[+] Bloom filter for 65536 elements : 0.88 MB
+[+] Allocating 1.00 MB for 65536 bP Points
+[+] processing 67108864/67108864 bP points : 100%     
+[+] Making checkums .. ... done
+[+] Sorting 65536 elements... Done!
+[+] Thread Key found privkey 7cce5efdaccf6808   
+[+] Publickey 0365ec2994b8cc0a20d40dd69edfe55ca32a54bcbbaa6b0ddcff36049301a54579
+All points were found
+
+real    1m47.271s
+user    3m15.463s
+sys     0m3.196s
+
+``
+
+
+
 ```
 time ./keyhunt -m bsgs -t 8 -f tests/67.pub -k 16  -r 4ffffe00000000000:50000000000000000
 ```
