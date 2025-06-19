@@ -1,5 +1,27 @@
 command
 ```
+./135
+[+] Version 0.2.230519 Satoshi Quest, developed by AlbertoBSD
+[+] Threads : 8
+[+] K factor 384
+[+] Stats output every 10 seconds
+[+] Random mode
+[+] Mode BSGS random
+[+] Opening file tests/135
+[+] Added 1 points from file
+[+] Range 
+[+] -- from : 0x400000000000000003c88a1d9b00000000
+[+] -- to   : 0x4fffffffffffffffffffffffffffffffff
+[+] N = 0xfffc0000000
+[+] Bloom filter for 1610612736 elements : 5520.99 MB
+[+] Bloom filter for 50331648 elements : 172.53 MB
+[+] Bloom filter for 1572864 elements : 5.39 MB
+[+] Allocating 24.00 MB for 1572864 bP Points
+[+] processing 260046848/1610612736 bP points : 16%
+```
+```
+
+
 #!/bin/sh
 time ./keyhunt -m bsgs -t 8 -f tests/135.pub -k 384  -r 4000000000000008335954177800000000:7fffffffffffffffffffffffffffffffff
 ```
